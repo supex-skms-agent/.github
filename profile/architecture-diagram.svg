@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="900" height="640" font-family="'Segoe UI', Arial, sans-serif">
+
+  <!-- Defs -->
+  <defs>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#7DA7FF"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#50C878"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#FFB347"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#A855F7"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="640" fill="#F8F9FB" rx="16"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#1A1D23">supex-skms-agent 서비스 구성도</text>
+
+  <!-- ===== SECTION: Frontend ===== -->
+  <rect x="30" y="60" width="840" height="110" rx="12" fill="#EEF4FF" stroke="#C7D9FF" stroke-width="1.5"/>
+  <text x="54" y="82" font-size="12" font-weight="700" fill="#3A5BCC" letter-spacing="1">FRONTEND</text>
+
+  <rect x="200" y="90" width="170" height="66" rx="10" fill="#FFFFFF" stroke="#7DA7FF" stroke-width="1.5"/>
+  <text x="285" y="116" text-anchor="middle" font-size="14" font-weight="700" fill="#2C50B8">💬 Chat Frontend</text>
+  <text x="285" y="136" text-anchor="middle" font-size="12" fill="#6B7A99">localhost:3000</text>
+
+  <rect x="530" y="90" width="170" height="66" rx="10" fill="#FFFFFF" stroke="#7DA7FF" stroke-width="1.5"/>
+  <text x="615" y="116" text-anchor="middle" font-size="14" font-weight="700" fill="#2C50B8">🛠 Admin Frontend</text>
+  <text x="615" y="136" text-anchor="middle" font-size="12" fill="#6B7A99">localhost:3001</text>
+
+  <!-- ===== SECTION: Backend ===== -->
+  <rect x="30" y="200" width="840" height="165" rx="12" fill="#F0FBF4" stroke="#B2E5C4" stroke-width="1.5"/>
+  <text x="54" y="222" font-size="12" font-weight="700" fill="#2A7A4B" letter-spacing="1">BACKEND</text>
+
+  <rect x="340" y="228" width="220" height="66" rx="10" fill="#FFFFFF" stroke="#50C878" stroke-width="2"/>
+  <text x="450" y="254" text-anchor="middle" font-size="14" font-weight="700" fill="#1A5E34">🔀 API Gateway</text>
+  <text x="450" y="274" text-anchor="middle" font-size="12" fill="#6B7A99">localhost:8000</text>
+
+  <rect x="75" y="315" width="175" height="36" rx="8" fill="#FFFFFF" stroke="#72C995" stroke-width="1.5"/>
+  <text x="162" y="333" text-anchor="middle" font-size="12" font-weight="600" fill="#1A5E34">📋 Admin API</text>
+  <text x="162" y="346" text-anchor="middle" font-size="11" fill="#6B7A99">:8001</text>
+
+  <rect x="285" y="315" width="175" height="36" rx="8" fill="#FFFFFF" stroke="#72C995" stroke-width="1.5"/>
+  <text x="372" y="333" text-anchor="middle" font-size="12" font-weight="600" fill="#1A5E34">🤖 LLM Gateway</text>
+  <text x="372" y="346" text-anchor="middle" font-size="11" fill="#6B7A99">:8080</text>
+
+  <rect x="495" y="315" width="175" height="36" rx="8" fill="#FFFFFF" stroke="#72C995" stroke-width="1.5"/>
+  <text x="582" y="333" text-anchor="middle" font-size="12" font-weight="600" fill="#1A5E34">🧠 Agent</text>
+  <text x="582" y="346" text-anchor="middle" font-size="11" fill="#6B7A99">:8006</text>
+
+  <!-- ===== SECTION: Infrastructure ===== -->
+  <rect x="30" y="405" width="840" height="130" rx="12" fill="#FFF7ED" stroke="#FFD199" stroke-width="1.5"/>
+  <text x="54" y="427" font-size="12" font-weight="700" fill="#AD6200" letter-spacing="1">INFRASTRUCTURE</text>
+
+  <!-- PostgreSQL -->
+  <rect x="44" y="435" width="108" height="76" rx="10" fill="#FFFFFF" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="98" y="462" text-anchor="middle" font-size="20">🐘</text>
+  <text x="98" y="482" text-anchor="middle" font-size="11" font-weight="600" fill="#7A4500">PostgreSQL</text>
+  <text x="98" y="498" text-anchor="middle" font-size="11" fill="#6B7A99">:5432</text>
+
+  <!-- Redis -->
+  <rect x="160" y="435" width="108" height="76" rx="10" fill="#FFFFFF" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="214" y="462" text-anchor="middle" font-size="20">⚡</text>
+  <text x="214" y="482" text-anchor="middle" font-size="11" font-weight="600" fill="#7A4500">Redis</text>
+  <text x="214" y="498" text-anchor="middle" font-size="11" fill="#6B7A99">:6379</text>
+
+  <!-- Phoenix -->
+  <rect x="276" y="435" width="108" height="76" rx="10" fill="#FFFFFF" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="330" y="462" text-anchor="middle" font-size="20">📊</text>
+  <text x="330" y="482" text-anchor="middle" font-size="11" font-weight="600" fill="#7A4500">Phoenix</text>
+  <text x="330" y="498" text-anchor="middle" font-size="11" fill="#6B7A99">:6006</text>
+
+  <!-- Azure AI Search -->
+  <rect x="392" y="435" width="108" height="76" rx="10" fill="#FFFFFF" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="446" y="462" text-anchor="middle" font-size="20">🔎</text>
+  <text x="446" y="479" text-anchor="middle" font-size="11" font-weight="600" fill="#7A4500">Azure AI</text>
+  <text x="446" y="495" text-anchor="middle" font-size="11" font-weight="600" fill="#7A4500">Search</text>
+
+  <!-- Milvus -->
+  <rect x="508" y="435" width="108" height="76" rx="10" fill="#FFFFFF" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="562" y="462" text-anchor="middle" font-size="20">🔍</text>
+  <text x="562" y="482" text-anchor="middle" font-size="11" font-weight="600" fill="#7A4500">Milvus</text>
+  <text x="562" y="498" text-anchor="middle" font-size="11" fill="#6B7A99">:19530</text>
+
+  <!-- Prefect -->
+  <rect x="624" y="435" width="108" height="76" rx="10" fill="#FFFFFF" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="678" y="462" text-anchor="middle" font-size="20">🔄</text>
+  <text x="678" y="482" text-anchor="middle" font-size="11" font-weight="600" fill="#7A4500">Prefect</text>
+  <text x="678" y="498" text-anchor="middle" font-size="11" fill="#6B7A99">:4200</text>
+
+  <!-- Traefik (빈 상자) -->
+  <rect x="740" y="435" width="108" height="76" rx="10" fill="#FFFFFF" stroke="#D8DCE6" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="794" y="462" text-anchor="middle" font-size="20">🔀</text>
+  <text x="794" y="482" text-anchor="middle" font-size="11" font-weight="600" fill="#999">Traefik</text>
+  <text x="794" y="498" text-anchor="middle" font-size="11" fill="#BBB">—</text>
+
+  <!-- ===== ARROWS ===== -->
+
+  <!-- Frontend → Gateway -->
+  <line x1="285" y1="156" x2="390" y2="228" stroke="#7DA7FF" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowBlue)"/>
+  <line x1="615" y1="156" x2="510" y2="228" stroke="#7DA7FF" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowBlue)"/>
+
+  <!-- Gateway → Backend services -->
+  <line x1="390" y1="294" x2="230" y2="315" stroke="#50C878" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <line x1="430" y1="294" x2="420" y2="315" stroke="#50C878" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <line x1="510" y1="294" x2="545" y2="315" stroke="#50C878" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+
+  <!-- Agent → LLM Gateway (현재) -->
+  <line x1="495" y1="333" x2="462" y2="333" stroke="#50C878" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+
+  <!-- Admin API → PostgreSQL -->
+  <line x1="140" y1="351" x2="110" y2="435" stroke="#FFB347" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowOrange)"/>
+
+  <!-- Admin API → Redis -->
+  <line x1="185" y1="351" x2="210" y2="435" stroke="#FFB347" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowOrange)"/>
+
+  <!-- LLM Gateway → PostgreSQL -->
+  <path d="M 330,351 C 260,385 175,400 138,435" stroke="#FFB347" stroke-width="1.5" stroke-dasharray="4,3" fill="none" marker-end="url(#arrowOrange)"/>
+  <!-- LLM Gateway → Redis -->
+  <line x1="355" y1="351" x2="250" y2="435" stroke="#FFB347" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowOrange)"/>
+  <!-- LLM Gateway → Phoenix -->
+  <line x1="395" y1="351" x2="345" y2="435" stroke="#FFB347" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowOrange)"/>
+
+  <!-- Agent → PostgreSQL (현재) -->
+  <path d="M 510,351 C 380,390 220,400 138,435" stroke="#FFB347" stroke-width="1.5" stroke-dasharray="4,3" fill="none" marker-end="url(#arrowOrange)"/>
+
+  <!-- Agent → Azure AI Search (현재) -->
+  <line x1="560" y1="351" x2="470" y2="435" stroke="#FFB347" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowOrange)"/>
+
+  <!-- Agent → Admin API (현재) -->
+  <path d="M 495,340 C 400,360 300,355 252,340" stroke="#50C878" stroke-width="1.5" fill="none" marker-end="url(#arrowGreen)"/>
+
+  <!-- ===== LEGEND ===== -->
+  <rect x="30" y="556" width="840" height="68" rx="10" fill="#F0F2F5" stroke="#D8DCE6" stroke-width="1"/>
+  <text x="54" y="576" font-size="11" font-weight="700" fill="#555E6E">범례</text>
+
+  <line x1="100" y1="592" x2="128" y2="592" stroke="#7DA7FF" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <circle cx="128" cy="592" r="3" fill="#7DA7FF"/>
+  <text x="136" y="596" font-size="11" fill="#555E6E">프론트엔드 요청</text>
+
+  <line x1="270" y1="592" x2="298" y2="592" stroke="#50C878" stroke-width="1.5"/>
+  <circle cx="298" cy="592" r="3" fill="#50C878"/>
+  <text x="306" y="596" font-size="11" fill="#555E6E">서비스 간 통신</text>
+
+  <line x1="430" y1="592" x2="458" y2="592" stroke="#FFB347" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="458" cy="592" r="3" fill="#FFB347"/>
+  <text x="466" y="596" font-size="11" fill="#555E6E">인프라 연결 (현재)</text>
+
+  <line x1="630" y1="592" x2="658" y2="592" stroke="#A855F7" stroke-width="2" stroke-dasharray="7,4"/>
+  <circle cx="658" cy="592" r="3" fill="#A855F7"/>
+  <text x="666" y="596" font-size="11" fill="#555E6E">예정 연결</text>
+
+</svg>
