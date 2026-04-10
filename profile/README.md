@@ -1,8 +1,8 @@
 # supex-skms-agent
 
-**SKMS(SK 지식관리시스템) 기반 AI Agent 서비스 플랫폼**
+**SKMS(SK Management System) 기반 AI Agent 서비스 플랫폼**
 
-SK그룹의 지식관리시스템(SKMS)을 활용한 AI Agent 서비스를 제공하는 멀티 레포 프로젝트입니다.
+SK그룹의 경영관리체계(SKMS)를 활용한 AI Agent 서비스를 제공하는 멀티 레포 프로젝트입니다.
 LLM 기반 에이전트가 SKMS 지식 체계를 검색·분석·활용하여 업무 생산성을 높입니다.
 
 ## 아키텍처
